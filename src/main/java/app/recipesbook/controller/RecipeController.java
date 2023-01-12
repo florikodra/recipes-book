@@ -2,9 +2,14 @@ package app.recipesbook.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-@RequestMapping("/recipe")
 public class RecipeController {
     
+    @GetMapping("/recipes")
+    public String index(){
+        return("pages/recipe/list");
+    }
 }

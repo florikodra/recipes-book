@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Recipe Book</title>
+    <link rel="icon" type="image/png" th:href="@{/images/favicon.png}">
+    <link th:href="@{/vendor/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/auth.css}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container h-100 d-flex align-items-center">
+        <section layout:fragment="content"></section>
+    </div>
+</body>
+</html>
